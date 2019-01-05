@@ -1,0 +1,70 @@
+#myCalendar {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+#myCalendar input {
+    width: 100%;
+}
+#calendar {
+    position: absolute;
+    min-width: 300px;
+    display: none;
+    text-align: center;
+    font-size: 1.1em;
+    top: 110%;
+    left: 10%;
+}
+#calendar .cdr-year {
+    padding: 5px;
+}
+#calendar .cdr-month {
+    position: relative;
+}
+#calendar .cdr-month p{
+    display: inline-block;
+    padding: 0 54px;
+}
+#calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#calendar table:hover {
+    cursor: pointer;
+}
+#calendar td, th {
+    height: 30px;
+    border: 1px solid #e0f7fa ;
+    padding: 0;
+}
+#calendar td:hover{
+    background: #00838f;
+}
+#calendar .prevMonth, #calendar .nextMonth {
+    color: lightgrey;
+}
+#calendar .today {
+    background: #40c4ff;
+}
+#calendar .btn {
+    position: absolute;
+    border: none;
+    background: #fff;
+    top: 18px;
+    width: 25px;
+    height: 25px;
+}
+#calendar #btn-next {
+    background: url("../img/right-arrow.png") no-repeat;
+    right: 15px;
+    background-size: cover;
+}
+#calendar #btn-prev {
+    background: url("../img/left-arrow.png") no-repeat;
+    left: 15px;
+    background-size: cover;
+}
+#calendar .active {
+    color: #fff;
+    background: #006064;
+}
