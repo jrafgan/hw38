@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1 - Google PlugIN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/google-plugin.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Задание - сделать jQuery PlugIn Google:
+            $('#google-button').alert(
+                '!Внимание!',
+                'После нажатия на кнопку OK откроется страница поиска Google',
+                function () {
+                    window.open('https://www.google.com/');
+                });
+        });
+    </script>
+</head>
+<body>
+<button id="google-button">Google</button>
+</body>
+</html>
