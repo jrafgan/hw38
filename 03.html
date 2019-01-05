@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задане 3</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/myCalendar.css">
+    <script src="js/myCalendar.js"></script>
+    <script>
+        $(function () {
+            $('#myCalendar').initCalendar({
+                restrictUserEdit: true,
+                setActiveChosenDate: true,
+                format: "dd-mm-yyyy dddd",
+                background: "#0097a7"
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="myCalendar"></div>
+</body>
+</html>
